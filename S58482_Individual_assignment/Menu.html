@@ -1,0 +1,699 @@
+<!-- https://www.w3schools.com/w3css/w3css_web_tmp_pizza.asp -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <style>
+      body {
+  min-height: 2000px;
+  padding-top: 70px;
+}
+
+.divDiv {
+  display: inline;
+  color: red;
+  font-size: 20px;
+}
+
+.navbar1 {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.navbar1 a {
+  
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar1 a:hover {
+  background: #f1f1f1;
+  color: black;
+}
+
+.navbar1 a.active {
+  background-color: red;
+  color: white;
+}
+
+.homeform input {
+  position:relative;
+  width:100%;
+}
+
+.additional {
+  background-color: rgba(240, 240, 240, 0.577);
+}
+
+.additional p {
+  color: red;
+}
+
+.myDiv {
+  color: white;
+  background-color: red;   
+}
+
+.myDiv p {
+  padding-left: 20px;
+  padding-right: 20-x;
+}
+
+.dets {
+  color: red;
+  font-size: 20px;
+}
+
+.myDiv2 {
+  color: white;
+  background-color: rgba(232, 225, 185, 0.848);
+}
+
+.navbar2 {
+  overflow: hidden;
+  background-color: #f2f2f2;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+
+.navbar2 a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 100px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar2 a:hover {
+  background: #f1f1f1;
+  color: black;
+  background-color: rgba(232, 225, 185, 0.848);
+}
+
+.navbar2 a.active {
+  background-color: rgba(232, 225, 185, 0.848);
+  color: rgb(164, 134, 94);
+}
+
+.dropbtn {
+  background-color: #f2f2f2;
+  color: black;
+  padding: 14px 100px;
+  font-size: 17px;
+  border: none;
+}
+
+.dropup {
+  position: relative;
+  display: inline-block;
+}
+
+.dropup-content {
+  display: none;
+  position: fixed;
+  background-color: #f2f2f2;
+  min-width: 160px;
+  bottom: 50px;
+  z-index: 1;
+}
+
+.dropup-content a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropup-content a:hover 
+{background-color: rgba(232, 225, 185, 0.848);}
+
+.dropup:hover .dropup-content {
+  display: block;
+}
+
+.dropup:hover .dropbtn {
+  background-color: rgba(232, 225, 185, 0.848);
+}
+
+.btnimg {
+  position: relative;
+  width: 100%;
+}
+
+.btnimg .btn {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  -ms-transform: translate(-50%, -40%);
+  background-color: red;
+  color: white;
+  font-size: 17px;
+  padding: 12px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.btnimg .btn:hover {
+  background-color: rgb(180, 0, 0);
+}
+
+
+/* home slideshow */
+.mySlides {
+  display: none
+}
+
+img {
+  vertical-align: middle;
+  width: 100%;
+}
+.desc1{
+  text-align: center;
+}
+
+.desc2{
+  text-align: center;
+  font-size: 20px;
+}
+
+* {box-sizing: border-box}
+.mySlides1, {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+max-width: 1000px;
+position: relative;
+margin: auto;
+background-color: rgb(239, 239, 239);
+}
+
+.fonts {
+  font-size: 17;
+  font-family: monospace;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 42%;
+width: auto;
+padding: 16px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+background-color: #f1f1f1;
+color: black;
+}
+
+/* Menu */
+.container {
+  color: black;
+  background-color: #e8ead7;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.nav {
+  position: sticky;
+  background-color: antiquewhite;
+  color: red;
+}
+
+.calory {
+  font-size: 15px;
+  color: grey;
+  padding-right: 60px;
+  float: right;
+}
+
+.price {
+  font-size: 25px;
+  color: red;
+  float: right;
+}
+
+.desc {
+  font-size: 15px;
+}
+
+#menucolor {
+  background-color: #e8ead7;
+  
+}
+
+.navbar3 {
+  overflow: hidden;
+  background-color: #e8ead7;
+  position: sticky;
+  width: 100%;
+}
+
+
+.navbg{
+  background-color:#f1f1f1;
+}
+
+.navbar a {
+  float: left;
+  color: red;
+  text-align: center;
+  padding: 14px 100px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #f1f1f1;
+  color: white;
+  background-color: red;
+}
+
+.navbar a.active {
+  background-color: rgba(232, 225, 185, 0.848);
+  color: rgb(164, 134, 94);
+ }
+
+ .ss {
+     color: black;
+     text-align: center;
+     font-family: monospace;
+     font-size: 20px;
+ }
+
+ .target {
+   font-size: 20px;
+   font-family: monospace;
+   color: rgb(11, 138, 11);
+   text-align: center;
+ }
+   </style>
+   <title>Food Menu</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/bootstrap.css">
+
+   <!-- Custom styles for this template -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+   <div class="divDiv">
+      <nav class="navbar-fixed-top navbg">
+         <a href="home.html"><button> <i class="fa fa-caret-left" style="font-size:48px;color:red"></i></button></a>
+         ORDER
+      </nav>
+   </div>
+
+   
+   <div class="navbar3 navbar a navbar a:hover navbar a.active ">
+      <a href="#Foods">Foods</a>
+      <a href="#Beverages">Beverages</a>
+   </div>
+
+   <div class="myDiv2"><br>
+       <h3 class="ss">All prices displayed are inclusive of 6% Service Tax (SST)</h3><br>
+      <br>
+    </div>
+    <br>
+    
+    <a name="Foods"></a>
+    <h2 class="target">FOODS</h2>
+    <div class="container">
+      <div id="menucolor">
+         <h2>1/4 Chicken With 1 Reg Side 
+            <span class="price">RM 20.90</span><span class="calory">311kcal</span>
+         </h2>
+
+         <hr>
+         <h2> 1/4 Chicken With 2 Reg Sides 
+            <span class="price">RM 24.90</span><span class="calory">311kcal</span>
+         </h2>
+         <!--p class="w3-text-grey">Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p-->
+
+         <hr>
+         <h2> 1/2 Chicken With 1 Reg Side 
+            <span class="price">RM 33.90</span><span class="calory">620kcal</span>
+         </h2>
+         <!--p class="w3-text-grey">Special sauce, mozzarella, parmesan, ground beef</p-->
+
+         <hr>
+         <h2> 1/2 Chicken With 2 Reg Sides 
+            <span class="price">RM 37.90</span><span class="calory">620kcal</span>
+         </h2>
+         <!--p class="w3-text-grey">Special sauce, mozzarella, parmesan, ground beef</p-->
+
+         <hr>
+         <h2> Chicken Butterfly with 1 Reg Side 
+            <span class="price">RM 26.90</span><span class="calory">339kcal</span>
+         </h2>
+         <p class="desc">Succulent chicken breasts joined by crispy skin.</p>
+
+         <hr>
+         <h2> Chicken Butterfly with <br>2 Reg Sides 
+            <span class="price">RM 30.90</span><span class="calory">339kcal</span>
+         </h2>
+         <p class="desc">Succulent chicken breasts joined by crispy skin.</p>
+
+         <hr>
+         <h2> Grilled Chicken Tenders with 1 <br>Reg Sides 
+            <span class="price">RM 16.90</span><span class="calory">322kcal</span>
+         </h2>
+
+
+         <hr>
+         <h2> Grilled Chicken Tenders with 2 <br>Reg Sides
+            <span class="price">RM 20.90</span> <span class="calory">322kcal</span>
+         </h2>
+
+         <hr>
+         <h2> 8 Wingettes and Drumettes with 1 <br>Reg Side 
+            <span class="price">RM 29.90</span><span class="calory">536kcal</span>
+         </h2>
+
+         <hr>
+         <h2> 8 Wingettes and Drumettes with 2 <br>Reg Side 
+            <span class="price">RM 33.90</span><span class="calory">536kcal</span>
+         </h2>
+
+         <hr>
+         <h2> Chicken Chop with 1 Side
+            <span class="price">RM 26.90</span><span class="calory">no calories</span>
+         </h2>
+         <p class="desc">Boneless and juicy chicken thigh</p>
+
+         <hr>
+         <h2> Chicken Chop with 2 Sides
+            <span class="price">RM 30.90</span><span class="calory">no calories</span>
+         </h2>
+         <p class="desc">Boneless and juicy chicken thigh</p>
+
+         <hr>
+         <h2> Chicken Chop with 2 Sides + <br>Drink
+            <span class="price">RM 31.90</span><span class="calory">no calories</span>
+         </h2>
+         <p class="desc">Boneless and juicy chicken thigh with 2 Sides of your choice and a <br>drink for a wholesome meal.
+         </p>
+
+         <hr>
+         <h2> 1/4 Chicken (Own Its Own) 
+            <span class="price">RM 16.90</span><span class="calory">311kcal</span>
+         </h2>
+
+
+         <hr>
+         <h2> Saucy Chicken Bowl
+            <span class="price">RM 15.90</span> <span class="calory">826kcal</span>
+         </h2>
+         <p class="desc">Available with Mediterranean Rice or Port Roll.Calorie counts for<br> Saucy Chicken Bowl with
+            Mediterranean Rice.</p>
+
+         <hr>
+         <h2> 4 Wingettes & Drumettes with 2 <br>sides 
+            <span class="price">RM 19.90</span><span class="calory">268kcal</span>
+         </h2>
+
+
+         <hr>
+         <h2> 16 Wingettes & Drumettes 
+            <span class="price">RM 43.90</span><span class="calory">1072kcal</span>
+         </h2>
+
+         <hr>
+         <h2> Whole Chicken
+            <span class="price">RM 53.90</span> <span class="calory">1239kcal</span>
+         </h2>
+
+         <hr>
+         <h2> Wing Roulette 
+            <span class="price">RM 43.90</span><span class="calory">1120kcal</span>
+         </h2>
+         <p class="desc">16 Wingettes and Drumettes randomly spiced in all our PERi-PERi <br>flavours.</p>
+
+         <hr>
+         <h2> The Greatest Chicken Meal
+            <span class="price">RM 32.90</span> <span class="calory">311kcal</span>
+         </h2>
+         <p class="desc">1/4 Chicken with 2 Sides, a PERi-PERi Soup and a Bottomless Soft<br> Drink</p>
+
+
+         <hr>
+         <h2> Happy Trio Chicken Bowl
+            <span class="price">RM 21.90</span><span class="calory">no calories</span>
+         </h2>
+         <p class="desc">Grilled Chicken Tenders with Spicy Rice, spinach, corn and red pepper. <br>*Not Available in East
+            Malaysia</p>
+
+         <hr>
+         <h2> Ultimate Trio Chicken Bowl
+            <span class="price">RM 27.90</span><span class="calory">no calories</span>
+         </h2>
+         <p class="desc">An upgraded version of Happy Trio Chicken Bowl with grilled portobello <br>mushrooms * Not
+            Available in East Malaysia</p>
+
+         <hr>
+         <h2> Veggie Carnival Bowl
+            <span <span class="price">RM 21.90</span><span class="calory">no calories</span>
+         </h2>
+         <p class="desc">Grilled portobello mushrooms with Spicy Rice, spinach, corn and red<br> pepper. * Not Available in
+            East Malaysia</p>
+
+         <hr>
+         <h2> Dino Garlic Cheesy Pita 
+            <span class="price">RM 14.90</span><span class="calory">no calories</span>
+         </h2>
+         <p class="desc">Garlic Cheesy Pita with 1 side + 1 drink * Sides ~ choose from<br> Corn Kernels, Red Skin Mashed
+            Potato, Mediterranean Rice, PERi-PERi <br>Soup or Chips *Drink ~ choose from Bottomless Soft Drink, Iced Milo or
+            Bottled Water</p>
+
+         <hr>
+         <h2> Dino Chicken Tenders
+            <span class="price">RM 14.90</span><span class="calory">no calories</span>
+         </h2>
+         <p class="desc">4 Chicken Tenders with 1 side + 1 drink * Sides ~ choose from Corn<br> Kernels, Red Skin Mashed
+            Potato, Mediterranean Rice, PERi-PERi Soup<br> or Chips *Drink ~ choose from Bottomless Soft Drink, Iced Milo or
+            Bottled Water</p>
+
+         <hr>
+         <h2> Portobello Mushroom with Tofu<br> Burger or Wrap with 1 Side
+               <span class="price">RM 24.90</span><span class="calory">no calories</span>
+         </h2>
+         <p class="desc">Grilled Portobello mushrooms with tofu patty mixed with fresh lettuce<br> and tomatoes smothered in creamy mayo and chilli jam.</p>
+
+         <hr>
+         <h2> Portobello Mushroom with Tofu <br>Burger or Wrap with 2 Sides
+               <span class="price">RM 28.90</span><span class="calory">no calories</span>
+         </h2>
+         <p class="desc">Grilled Portobello mushrooms with tofu patty mixed with fresh lettuce<br> and tomatoes smothered in creamy mayo and chilli jam.</p>
+         
+         <hr>
+         <h2> Portobello Mushroom with Tofu <br>Burger or Wrap(On Its Own)
+               <span class="price">RM 20.90</span><span class="calory">no calories</span>
+         </h2>
+         <p class="desc">Grilled Portobello mushrooms with tofu patty mixed with fresh lettuce <br>and tomatoes smothered in creamy mayo and chilli jam.</p>
+         
+         <hr>
+         <h2> Veggie Carnival Bowl
+               <span class="price">RM 20.90</span><span class="calory">no calories</span>
+         </h2>
+         <p class="desc">Grilled Portobello mushrooms with Spicy Rice, spinach, corn and<br> red pepper. * Not Available in East Malaysia</p>
+
+      </div>
+   </div>
+   <br>
+   <br>
+
+    <a name="Beverages"></a>
+    <div class="target"> BEVERAGES</div>
+   <div class="container">
+    <div id="menucolor">
+       <h2> Coca-Cola<span class="price">RM 8.90</span>
+          <span class="calory">149kcal</span>
+          
+       </h2>
+
+       <hr>
+       <h2> Coke No Calories<span class="price">RM 8.90</span>
+          <span class="calory">no calories</span>
+       </h2>
+
+       <hr>
+       <h2> Sprite
+          <span class="price">RM 8.90</span><span class="calory">67kcal</span>
+       </h2>
+
+       <hr>
+       <h2> Minute Maid Refresh Orange
+          <span class="price">RM 8.90</span><span class="calory">166kcal</span>
+       </h2>
+
+       <hr>
+       <h2> Heaven & Earth Iced Lemon Tea
+          <span class="price">RM 8.90</span><span class="calory">159kcal</span>
+       </h2>
+
+       <hr>
+       <h2> Cappucino
+          <span class="price">RM 11.90</span><span class="calory">54kcal</span>
+       </h2>
+
+       <hr>
+       <h2> Hot Galao
+          <span class="price">RM 11.90</span><span class="calory">71kcal</span>
+       </h2>
+       <p class="desc">Portuguese for latte</p>
+
+       <hr>
+       <h2> Hot Americano
+          <span class="price">RM 10.90</span><span class="calory">12kcal</span>
+       </h2>
+
+       <hr>
+       <h2>Hot Mocha
+          <span class="price">RM 11.90</span><span class="calory">151kcal</span>
+       </h2>
+
+       <hr>
+       <h2> Iced Galao
+          <span class="price">RM 12.90</span><span class="calory">72kcal</span>
+       </h2>
+
+       <hr>
+       <h2> Iced Americano
+          <span class="price">RM 11.90</span><span class="calory">14kcal</span>
+       </h2>
+
+       <hr>
+       <h2> Iced Mocha
+          <span class="price">RM 12.90</span><span class="calory">147kcal</span>
+       </h2>
+
+       <hr>
+       <h2> Chamomile Tea
+          <span class="price">RM 10.90</span><span class="calory">no calories</span>
+       </h2>
+       <p class="desc">A premium flavoured tea with the perfect blend of Chamomile flowers,<br>
+       rose petals and lavender buds.</p>
+
+       <hr>
+       <h2>English Breakfast Tea
+          <span class="price">RM 11.90</span><span class="calory">no calories</span>
+       </h2>
+       <p class="desc">A premium flavoured tea with pure Ceylon black tea that gives a strong,<br> robust, full bodied flavour. </p>
+
+       <hr>
+       <h2> Green Tea
+          <span class="price">RM 11.90</span><span class="calory">80kcal</span>
+       </h2>
+       <p class="desc">A premium flavoured tea with pure green Chinese tea infused with the<br> delicate scent of jasmine flowers</p>
+
+       <hr>
+       <h2> Sparkling Apple
+          <span class="price">RM 11.90</span><span class="calory">80kcal</span>
+       </h2>
+       <p class="desc">This fun, flirty beverage, made with real apple juice, never fails to <br>create a stir.</p>
+
+       <hr>
+       <h2> Citrus Iced Tea 
+          <span class="price">RM 11.90</span><span class="calory">147kcal</span>
+       </h2>
+       <p class="desc">An invigorating burst of zesty flavours and elderflower, infused with a<br> cool blend of lemon tea and Sprite.</p>
+
+       <hr>
+       <h2> Tropical Fruitea 
+          <span class="price">RM 11.90</span><span class="calory">161kcal</span>
+       </h2>
+       <p class="desc">A tropical medley of mango and lime, infused with orange juice<br> and lemon tea.</p>
+
+
+       <hr>
+       <h2> Mango Fresca
+          <span class="price">RM 11.90</span><span class="calory">99kcal</span>
+       </h2>
+       <p class="desc">Fruity mango with a burst of fizzy water garnished with fresh mint.</p>
+
+       <hr>
+       <h2> Hot Chocolate
+          <span class="price">RM 11.90</span><span class="calory">142kcal</span>
+       </h2>
+
+       <hr>
+       <h2> Iced Chocolate 
+          <span class="price">RM 12.90</span><span class="calory">127kcal</span>
+       </h2>
+
+       <hr>
+       <h2>Lemon Lime Cooler <br>(No Sugar)
+          <span class="price">RM 6.90</span><span class="calory">3kcal</span>
+       </h2>
+
+       <hr>
+       <h2> Orange Juice
+          <span class="price">RM 9.90</span><span class="calory">152kcal</span>
+       </h2>
+
+       <hr>
+       <h2> Iced Milo
+          <span class="price">RM 4.90</span><span class="calory">no calories</span>
+       </h2>
+
+       <hr>
+       <h2>Bottled Water
+          <span class="price">RM 3.90</span><span class="calory">no calories</span>
+       </h2>
+
+
+    </div>
+    </div>
+
+
+
+   <div class="navbar2 navbar-fixed-bottom navbar a navbar a:hover navbar a.active">
+      <a href="Home.html">Home</a>
+      <a href="#">Menu</a>
+      <div class="dropup">
+         <button class="dropbtn" >More
+            <i class="fa fa-caret-up"></i>
+         </button>
+         <div class="dropup-content">
+            <a href="Contact Us.html">Contact Us</a>
+            <a href="FAQ.html">Loyalty FAQs</a>
+         </div>
+      </div>
+   </div>
+
+   <script src="js/jquery-3.2.1.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

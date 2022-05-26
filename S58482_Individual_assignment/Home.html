@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <style>
+         body {
+  min-height: 2000px;
+  padding-top: 70px;
+}
+
+.divDiv {
+  display: inline;
+  color: red;
+  font-size: 20px;
+}
+
+.navbar1 {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.navbar1 a {
+  
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar1 a:hover {
+  background: #f1f1f1;
+  color: black;
+}
+
+.navbar1 a.active {
+  background-color: red;
+  color: white;
+}
+
+.homeform input {
+  position:relative;
+  width:100%;
+}
+
+.additional {
+  background-color: rgba(240, 240, 240, 0.577);
+}
+
+.additional p {
+  color: red;
+}
+
+.myDiv {
+  color: white;
+  background-color: red;   
+}
+
+.myDiv p {
+  padding-left: 20px;
+  padding-right: 20-x;
+}
+
+.dets {
+  color: red;
+  font-size: 20px;
+}
+
+.myDiv2 {
+  color: white;
+  background-color: rgba(232, 225, 185, 0.848);
+}
+
+.navbar2 {
+  overflow: hidden;
+  background-color: #f2f2f2;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+
+.navbar2 a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 100px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar2 a:hover {
+  background: #f1f1f1;
+  color: black;
+  background-color: rgba(232, 225, 185, 0.848);
+}
+
+.navbar2 a.active {
+  background-color: rgba(232, 225, 185, 0.848);
+  color: rgb(164, 134, 94);
+}
+
+.dropbtn {
+  background-color: #f2f2f2;
+  color: black;
+  padding: 14px 100px;
+  font-size: 17px;
+  border: none;
+}
+
+.dropup {
+  position: relative;
+  display: inline-block;
+}
+
+.dropup-content {
+  display: none;
+  position: fixed;
+  background-color: #f2f2f2;
+  min-width: 160px;
+  bottom: 50px;
+  z-index: 1;
+}
+
+.dropup-content a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropup-content a:hover 
+{background-color: rgba(232, 225, 185, 0.848);}
+
+.dropup:hover .dropup-content {
+  display: block;
+}
+
+.dropup:hover .dropbtn {
+  background-color: rgba(232, 225, 185, 0.848);
+}
+
+.btnimg {
+  position: relative;
+  width: 100%;
+}
+
+.btnimg .btn {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  -ms-transform: translate(-50%, -40%);
+  background-color: red;
+  color: white;
+  font-size: 17px;
+  padding: 12px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.btnimg .btn:hover {
+  background-color: rgb(180, 0, 0);
+}
+
+
+/* home slideshow */
+.mySlides {
+  display: none
+}
+
+img {
+  vertical-align: middle;
+  width: 100%;
+}
+.desc1{
+  text-align: center;
+}
+
+.desc2{
+  text-align: center;
+  font-size: 20px;
+}
+
+* {box-sizing: border-box}
+.mySlides1, {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+max-width: 1000px;
+position: relative;
+margin: auto;
+background-color: rgb(239, 239, 239);
+}
+
+.fonts {
+  font-size: 17;
+  font-family: monospace;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 42%;
+width: auto;
+padding: 16px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+background-color: #f1f1f1;
+color: black;
+}
+
+/* Menu */
+.container {
+  color: black;
+  background-color: #e8ead7;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.nav {
+  position: sticky;
+  background-color: antiquewhite;
+  color: red;
+}
+
+.calory {
+  font-size: 15px;
+  color: grey;
+  padding-right: 60px;
+  float: right;
+}
+
+.price {
+  font-size: 25px;
+  color: red;
+  float: right;
+}
+
+.desc {
+  font-size: 15px;
+}
+
+#menucolor {
+  background-color: #e8ead7;
+  
+}
+
+.navbar3 {
+  overflow: hidden;
+  background-color: #e8ead7;
+  position: sticky;
+  width: 100%;
+}
+
+
+.navbg{
+  background-color:#f1f1f1;
+}
+
+.navbar a {
+  float: left;
+  color: red;
+  text-align: center;
+  padding: 14px 100px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #f1f1f1;
+  color: white;
+  background-color: red;
+}
+
+.navbar a.active {
+  background-color: rgba(232, 225, 185, 0.848);
+  color: rgb(164, 134, 94);
+ }
+
+ .ss {
+     color: black;
+     text-align: center;
+     font-family: monospace;
+     font-size: 20px;
+ }
+
+ .target {
+   font-size: 20px;
+   font-family: monospace;
+   color: rgb(11, 138, 11);
+   text-align: center;
+ }
+      </style>
+      <title>Home</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+
+      <!-- Custom styles for this template -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      
+   </head>
+   <body>
+      <!-- Fixed navbar -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <a class="navbar-brand" href="#">HOME</a>
+        </nav>
+          
+      <div class="btnimg">
+         <img src="imghome.jpeg" alt="home" width="100%">
+         <button class="btn">Register Now</button>
+      </div> 
+
+      <div class="slideshow-container">
+         <br><br>
+         <h2 class="fonts">What's new?</h2> <br><br>
+         <div class="mySlides1">
+           <img src="img1.jpeg">
+           <br><br>
+           <h2 class="desc1">Fire Up your senses,not your pocket</h2> 
+           <br>
+           <h2 class="desc2">VUSA XX Hot 1/4 Chicken with 2 sides & a Bottomless Soft Drink at RM27.90</h2> <br><br>
+         </div>
+       
+         <div class="mySlides1">
+           <img src="img2.jpeg">
+           <br><br>
+           <h2 class="desc1">Extra 8% off</h2> 
+           <br>
+           <h2 class="desc2">PICKUP8</h2> <br><br>
+         </div>
+       
+         <div class="mySlides1">
+           <img src="img3.jpeg">
+           <br><br>
+           <h2 class="desc1">nEW sECRET PERi-PERi flavour</h2> 
+           <br>
+           <h2 class="desc2">Member's Exclusive</h2> <br><br>
+         </div>
+
+         
+         <div class="mySlides1">
+            <img src="img4.jpeg">
+            <br><br>
+            <h2 class="desc1">eXTRA eXTRA cold ice</h2> 
+            <br>
+            <h2 class="desc2">from May 9th</h2> <br><br>
+          </div>
+       
+         <br><br>
+         <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+         <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+      </div>
+       
+      <div class="navbar2">
+         <a href="#">Home</a>
+         <a href="Menu.html">Menu</a>
+         <div class="dropup">
+         <button class="dropbtn">More
+            <i class="fa fa-caret-up"></i>
+         </button>
+         <div class="dropup-content">
+            <a href="Contact Us.html">Contact Us</a>
+            <a href="FAQ.html">Loyalty FAQs</a>
+         </div>
+         </div>
+      </div>
+
+      <script>
+         let slideIndex = [1,1];
+         let slideId = ["mySlides1", "mySlides2"]
+         showSlides(1, 0);
+         showSlides(1, 1);
+     
+         function plusSlides(n, no) {
+            showSlides(slideIndex[no] += n, no);
+         }
+     
+         function showSlides(n, no) {
+            let i;
+            let x = document.getElementsByClassName(slideId[no]);
+            if (n > x.length) {slideIndex[no] = 1}    
+            if (n < 1) {slideIndex[no] = x.length}
+            for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";  
+            }
+            x[slideIndex[no]-1].style.display = "block";  
+         }
+       </script>
+
+
+      <script src="js/jquery-3.2.1.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+   </body>
+</html>
